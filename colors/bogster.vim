@@ -292,22 +292,6 @@ hi! link Title BogsterFg0
 hi! link Todo BogsterRedBold
 hi! link Underlined BogsterBlueUnder
 
-" ALE
-
-hi! link ALEVirtualTextError ErrorMsg
-hi! link ALEVirtualTextWarning WarningMsg
-
-" asm
-
-hi! link asmIdentifier Identifier
-hi! link asmDirective Function
-
-" bib
-
-hi! link bibEntryKw LibraryIdent
-hi! link bibKey IdentifierDef
-hi! link bibType LibraryType
-
 " buftabline
 hi! link BufTabLineCurrent Pmenu
 hi! link BufTabLineActive PmenuSel
@@ -322,27 +306,6 @@ hi! link cRepeat Keyword
 hi! link cLabel BogsterOrange
 hi! link cConstant BogsterLBlue
 
-" Coc
-
-hi! link CocErrorSign ErrorMsgInverse
-hi! link CocWarningSign WarningMsgInverse
-hi! link CocInfoSign InfoMsgInverse
-hi! link CocHintSign SignMsgInverse
-hi! link CocErrorFloat ErrorMsg
-hi! link CocWarningFloat WarningMsg
-hi! link CocInfoFloat InfoMsg
-hi! link CocHintFloat HintMsg
-hi! link CocDiagnosticsError ErrorMsg
-hi! link CocDiagnosticsWarning WarningMsg
-hi! link CocDiagnosticsInfo InfoMsg
-hi! link CocDiagnosticsHint HintMsg
-hi! link CocSelectedText BogsterLRed
-hi! link CocCodeLens BogsterBase3
-
-call s:__hl("CocErrorHighlight", "none", "none", "undercurl,bold")
-hi! link CocWarningHighlight CocErrorHighlight
-hi! link CocInfoHighlight CocErrorHighlight
-hi! link CocHintHighlight CocErrorHighlight
 
 " NeoVim LSP
 hi! link DiagnosticHint HintMsg
@@ -362,17 +325,6 @@ hi! link LspDiagnosticsSignError ErrorMsgInverse
 hi! link LspDiagnosticsSignWarning WarningMsgInverse
 hi! link LspDiagnosticsSignInformation InfoMsgInverse
 hi! link LspDiagnosticsSignHint HintMsgInverse
-
-" CSS
-hi! link cssClassName Type
-hi! link cssPseudoClassId PreProc
-hi! link cssIdentifier Identifier
-hi! link cssFunctionName FunctionDef
-hi! link cssCustomProp Normal
-hi! link cssFunctionComma Normal
-hi! link cssBraces Normal
-hi! link cssSelectorOp Operator
-hi! link cssSelectorOp2 Operator
 
 " diff
 
@@ -444,89 +396,3 @@ hi! link shSpecial shEscape
 hi! link shSpecialDQ shSpecial
 hi! link shSpecialSQ shSpecial
 
-" python
-hi! link pythonClass Type
-hi! link pythonClassVar BogsterOrange
-hi! link pythonOperator Operator
-hi! link pythonRun PreProc
-
-" Rust
-hi! link rustMacro PreProc
-hi! link rustAttribute PreProc
-hi! link rustDerive PreProc
-hi! link rustSelf BogsterLRed
-hi! link rustFuncName FunctionDef
-hi! link rustIdentifier Identifier
-hi! link rustType LibraryType
-hi! link rustStorage Keyword
-hi! link rustEnumVariant rustType
-hi! link rustConditional Keyword
-hi! link rustRepeat Keyword
-hi! link rustSigil BogsterOrange
-hi! link rustCommentLineDoc PreProc
-hi! link rustQuestionMark Operator
-hi! link rustModPath BogsterLRed
-
-" Vim
-hi! link vimVar Normal
-hi! link vimOper Operator
-hi! link vimLet Keyword
-hi! link vimNotFunc Keyword
-hi! link vimCommand Keyword
-hi! link vimHiGroup Type
-hi! link vimGroup Type
-hi! link vimContinue vimOper
-hi! link vimUserFunc Function
-
-" treesitter
-hi! link TSBoolean Boolean
-hi! link TSCharacter Character
-hi! link TSComment Comment
-hi! link TSConditional Keyword
-hi! link TSConstant Normal
-hi! link TSConstBuiltin PreProc
-hi! link TSConstMacro PreProc
-hi! link TSConstructor PreProc
-hi! link TSError Error
-hi! link TSException Keyword
-hi! link TSField Normal
-hi! link TSFloat Number
-hi! link TSFunction Function
-hi! link TSFuncBuiltin Function
-hi! link TSFuncMacro PreProc
-hi! link TSInclude PreProc
-hi! link TSKeyword Keyword
-hi! link TSKeywordOperator Keyword
-hi! link TSLabel PreProc
-hi! link TSMethod Function
-hi! link TSNamespace Normal
-hi! link TSNumber Number
-hi! link TSOperator Operator
-hi! link TSParameter Normal
-hi! link TSParameterReference Normal
-hi! link TSProperty Normal
-hi! link TSPunctDelimiter Delimiter
-hi! link TSPunctBracket Delimiter
-hi! link TSPunctSpecial Delimiter
-hi! link TSRepeat Keyword
-hi! link TSString Constant
-hi! link TSStringRegex BogsterTeal
-hi! link TSStringEscape Special
-hi! link TSSymbol Constant
-hi! link TSTagDelimiter Delimiter
-hi! link TSText Normal
-hi! link TSStrong BogsterFg1Bold
-hi! link TSUnderline BogsterFg1Under
-hi! link TSTitle Keyword
-hi! link TSLiteral Normal
-hi! link TSURI BogsterBlue
-hi! link TSMath Constant
-hi! link TSTextReference Comment
-hi! link TSEnvironmentName PreProc
-hi! link TSNote Comment
-hi! link TSWarning BogsterOrange
-hi! link TSDanger BogsterRed
-hi! link TSType Type
-hi! link TSTypeBuiltin Type
-hi! link TSVariable Normal
-hi! link TSVariableBuiltin BogsterTeal
