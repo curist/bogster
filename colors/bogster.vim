@@ -222,7 +222,7 @@ call s:__hl("StatusLine", "fg1", "base3")
 call s:__hl("StatusLineNC", "base0", "base2")
 call s:__hl("Todo", "fg0", "base0")
 call s:__hl("VertSplit", "base1", "base1")
-call s:__hl("Visual", "none", "base0", "reverse")
+call s:__hl("Visual", "none", "none", "reverse")
 
 "########################################
 " links
