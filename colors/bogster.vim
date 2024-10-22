@@ -291,6 +291,8 @@ hi! link Terminal Normal
 hi! link Title BogsterFg0
 hi! link Todo BogsterRedBold
 hi! link Underlined BogsterBlueUnder
+hi! WinSeparator guibg=NONE guifg=#273340
+
 
 " buftabline
 hi! link BufTabLineCurrent Pmenu
