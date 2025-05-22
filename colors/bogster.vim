@@ -299,6 +299,98 @@ hi! link BufTabLineCurrent Pmenu
 hi! link BufTabLineActive PmenuSel
 
 
+" Tree-sitter highlighting groups
+" Text
+hi! link @text Normal
+hi! link @text.strong BogsterFg1Bold
+hi! link @text.emphasis BogsterBlueItalic
+hi! link @text.underline BogsterFg1Under
+hi! link @text.title Title
+hi! link @text.literal String
+hi! link @text.uri BogsterBlueUnder
+hi! link @text.reference Identifier
+
+" Comments
+hi! link @comment Comment
+hi! link @comment.error ErrorMsg
+hi! link @comment.warning WarningMsg
+
+" Punctuation
+hi! link @punctuation.bracket Delimiter
+hi! link @punctuation.delimiter Delimiter
+hi! link @punctuation.special Delimiter
+
+" Constants
+hi! link @constant Constant
+hi! link @constant.builtin Special
+hi! link @constant.macro Define
+
+" Strings
+hi! link @string String
+hi! link @string.escape SpecialChar
+hi! link @string.regexp String " Fallback, consider defining BogsterPurp or similar if distinct color desired
+
+" Characters
+hi! link @character Character
+hi! link @character.special SpecialChar
+
+" Numbers & Booleans
+hi! link @number Number
+hi! link @boolean Boolean
+hi! link @float Float
+
+" Functions
+hi! link @function Function
+hi! link @function.builtin LibraryFunc
+hi! link @function.call Function
+hi! link @function.macro Macro
+hi! link @method Function
+hi! link @method.call Function
+
+" Types & Classes
+hi! link @constructor Type
+hi! link @class Type " Using Type for classes as well
+hi! link @type Type
+hi! link @type.builtin Type
+hi! link @type.definition Typedef
+hi! link @storageclass StorageClass
+
+" Identifiers
+hi! link @parameter Identifier
+hi! link @variable Identifier
+hi! link @variable.builtin Special
+hi! link @property BogsterTeal " Or link to Identifier if BogsterTeal is not suitable
+
+" Keywords
+hi! link @keyword Keyword
+hi! link @keyword.function Keyword
+hi! link @keyword.operator Operator
+hi! link @keyword.return Statement
+
+" Operators
+hi! link @operator Operator
+
+" Modules & Includes
+hi! link @namespace BogsterLGreen " Mapped to a Special-like color
+hi! link @include Include
+hi! link @preproc PreProc
+
+" Tags (HTML/XML)
+hi! link @tag Tag
+hi! link @tag.attribute BogsterOrange " Color for attribute names
+hi! link @tag.delimiter Delimiter
+
+" Control Flow
+hi! link @conditional Conditional
+hi! link @exception Exception
+hi! link @repeat Repeat
+hi! link @label Label
+
+" Misc
+hi! link @error Error
+hi! link @todo Todo
+
+
 " C
 
 hi! link cInclude PreProc
@@ -327,6 +419,11 @@ hi! link LspDiagnosticsSignError ErrorMsgInverse
 hi! link LspDiagnosticsSignWarning WarningMsgInverse
 hi! link LspDiagnosticsSignInformation InfoMsgInverse
 hi! link LspDiagnosticsSignHint HintMsgInverse
+
+hi! link DiagnosticUnderlineError BogsterRedUnder
+hi! link DiagnosticUnderlineWarn BogsterYellowBold
+hi! link DiagnosticUnderlineInfo BogsterBlueUnder
+hi! link DiagnosticUnderlineHint BogsterBase5
 
 " diff
 
